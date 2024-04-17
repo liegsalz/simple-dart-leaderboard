@@ -1,4 +1,4 @@
-# TicTacToe Backend
+# Simple Dart Leaderboard
 
 You can run the backend with:
 
