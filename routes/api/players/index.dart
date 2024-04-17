@@ -10,6 +10,8 @@ Future<Response> onRequest(RequestContext context) async {
       return handleGet();
     case 'POST':
       return handlePost(context);
+    case 'DELETE':
+      return handleDelete();
     default:
       return Response(statusCode: 401, body: 'Method not allowed.');
   }
@@ -40,5 +42,16 @@ Future<Response> handlePost(RequestContext context) async {
       : Response(
           statusCode: 500,
           body: 'Error adding player. Something went wrong. Please try again.',
+        );
+}
+
+Future<Response> handleDelete() async {
+  final cleandDb = await getPlayerRepository().resetDb();
+
+  return cleandDb
+      ? Response()
+      : Response(
+          statusCode: 500,
+          body: 'Error resetting database. Please try again.',
         );
 }

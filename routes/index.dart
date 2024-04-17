@@ -66,8 +66,15 @@ const html = """
         <tr>
             <td>POST</td>
             <td>/api/players</td>
-            <td>{"name": "name"}</td>
             <td>Creates a new player with the given name.</td>
+            <td>{"name": "Bryan Liegsalz"}</td>
+        </tr>
+
+          <tr>
+            <td>DELETE</td>
+            <td>/api/players</td>
+            <td>Resets database.</td>
+            <td>n/a</td>
         </tr>
     </table>
 
@@ -82,7 +89,7 @@ const html = """
         <tr>
             <td>GET</td>
             <td>/api/players/&lt;player_id&gt;</td>
-            <td>Gets player with id player_id.</td>
+            <td>Gets player with id <i>player_id</i>.</td>
         </tr>
     </table>
 
@@ -97,7 +104,7 @@ const html = """
         <tr>
             <td>POST</td>
             <td>/api/players/&lt;player_id&gt;/score/win</td>
-            <td>Adds a win to the player with id player_id.</td>
+            <td>Adds a win to the player with id <i>player_id</i>.</td>
         </tr>
     </table>
 </body>

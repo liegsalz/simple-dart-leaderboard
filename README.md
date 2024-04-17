@@ -8,10 +8,4 @@ Make sure to install [docker](https://docs.docker.com/engine/install/) and [dock
 
 # Endpoints
 
-GET /api/players -> gets all players
-
-POST /api/players -> creates a new player. Expects body with {"name": name }
-
-GET /api/players/<player_id> -> gets player with id player_id
-
-POST /api/players/player_id/score/win -> adds a win to the player with id player_id
+**GET** localhost:8080
