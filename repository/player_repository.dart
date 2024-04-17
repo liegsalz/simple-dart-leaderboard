@@ -1,7 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:logger/logger.dart';
+
 import 'package:collection/collection.dart';
+import 'package:logger/logger.dart';
 
 import '../model/player.dart';
 
